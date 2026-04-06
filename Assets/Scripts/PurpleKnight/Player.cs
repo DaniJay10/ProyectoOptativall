@@ -11,6 +11,11 @@ public class Player : MonoBehaviour
     private int maxHealth = 100;
     private bool gameIsPaused = false;
 
+    // Ataque
+    private bool isAttacking = false;
+    private bool canMove = true;
+
+
     void Start()
     {
         //Como es una variable publica, se puede asignar desde el inspector, pero también se puede hacer por código
@@ -34,12 +39,32 @@ public class Player : MonoBehaviour
         CheckFlip();
         OpenCloseInventory();
         OpenClousePauseMenu();
+
+        //Ataque
+        if (isAttacking)
+        {
+            canMove = false;
+        }
+        else
+        {
+            canMove = true;
+        }
+        Attack();
     }
 
 
     private void FixedUpdate()
     {
-        rb2D.linearVelocity = movementInput * speed;
+        if (canMove)
+        {
+            rb2D.linearVelocity = movementInput * speed;
+        }
+        else
+        {
+            rb2D.linearVelocity = Vector2.zero;
+        }
+        
+       
     }
 
     /// <summary>
@@ -85,6 +110,29 @@ public class Player : MonoBehaviour
                 gameIsPaused = true;
             }
         }
+    }
+
+    /// <summary>
+    /// Metodo de ataque
+    /// </summary>
+    void Attack()
+    {
+        if(Input.GetMouseButtonDown(0) && !isAttacking)
+        {
+            int randomIndex = Random.Range(0, 2);
+            animator.SetInteger("AttackIndex", randomIndex);
+            animator.SetTrigger("DoAttack");
+        }
+    }
+
+    public void StartAttack()
+    {
+        isAttacking = true;
+    }
+
+    public void EndAttack()
+    {
+        isAttacking = false;
     }
 
 }
