@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     // Ataque
     private bool isAttacking = false;
     private bool canMove = true;
-
+    Vector2 lastMovementDir = Vector2.right;
 
     void Start()
     {
@@ -49,6 +49,12 @@ public class Player : MonoBehaviour
         {
             canMove = true;
         }
+
+        if(movementInput != Vector2.zero)
+        {
+            lastMovementDir = movementInput;
+        }
+
         Attack();
     }
 
@@ -119,20 +125,66 @@ public class Player : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0) && !isAttacking)
         {
+            int direction = GetDirectionIndex(lastMovementDir);
+            Vector2 AttackDirection = GetAttackInputDirection();
+            int attackDirection = GetDirectionIndex(AttackDirection);
+
+            animator.SetInteger("AttackDirection", attackDirection);
+
+
             int randomIndex = Random.Range(0, 2);
             animator.SetInteger("AttackIndex", randomIndex);
             animator.SetTrigger("DoAttack");
         }
     }
 
+    /// <summary>
+    /// Metodo iniciar ataque
+    /// </summary>
     public void StartAttack()
     {
         isAttacking = true;
     }
 
+    /// <summary>
+    /// Metodo finalizar ataque
+    /// </summary>
     public void EndAttack()
     {
         isAttacking = false;
+    }
+
+    Vector2 GetAttackInputDirection()
+    {
+        Vector2 InputDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+
+        if(InputDirection != Vector2.zero)
+        {
+            return InputDirection;
+        }
+        else
+        {
+            if (transform.localScale.x > 0)
+            {
+                return Vector2.right;
+            }
+            else
+            {
+                return Vector2.left;
+            }
+        }
+    }
+
+    int GetDirectionIndex(Vector2 Direction)
+    {
+        if(Mathf.Abs(Direction.x) > Mathf.Abs(Direction.y))
+        {
+            return Direction.x > 0 ? 0 : 1; 
+        }
+        else
+        {
+            return Direction.y > 0 ? 2 : 3;
+        }
     }
 
 }
