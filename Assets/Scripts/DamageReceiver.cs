@@ -1,20 +1,36 @@
 using UnityEngine;
+using System.Collections;
 
 public class DamageReceiver : MonoBehaviour
 {
     [Header("Stats")]
-    public int maxHealth = 10;
+    public int maxHealth = 20;
     private int currentHealth;
 
     [Header("Drop")]
-    public GameObject itemToDrop;
+    public GameObject[] itemToDrop;
     
-    public Rigidbody2D rb2D;
+    private Rigidbody2D rb2D;
     public float forceImpulse = 5;
+    //Variable exclusiva del arbol
+    private Animator animator;
+
+    //Cambio de color al realizarse el golpe
+    private SpriteRenderer spriteRenderer;
+    private Color originalColor;
+    Coroutine hitCoroutine;
 
     void Start()
     {
         currentHealth = maxHealth;
+        rb2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            originalColor = spriteRenderer.color;
+        }
     }
 
     /// <summary>
@@ -23,6 +39,7 @@ public class DamageReceiver : MonoBehaviour
     public void ApplyDamage(int amount, bool applyForceOrNot, bool applyWithAnimation, Vector2 hitDirection)
     {
         currentHealth -= amount;
+        StartCoroutine(HitFlash());
 
         if (applyForceOrNot)
         {
@@ -33,7 +50,7 @@ public class DamageReceiver : MonoBehaviour
         }
         if (applyWithAnimation)
         {
-
+            animator.SetTrigger("Hit");
         }
         if(currentHealth <= 0)
         {
@@ -50,11 +67,35 @@ public class DamageReceiver : MonoBehaviour
 
     void DropItem()
     {
-        Instantiate(itemToDrop, transform.position + Vector3.up, Quaternion.identity);
+        //ItemToDrop se pone como array porque en el caso del arbol hay dos objetos
+        for (int i = 0; i < itemToDrop.Length; i++)
+        {
+            Instantiate(itemToDrop[i], transform.position, Quaternion.identity);
+        }
     }
 
     void Die()
     {
         Destroy(gameObject);
+    }
+
+    IEnumerator HitFlash()
+    {
+        if (spriteRenderer == null)
+            yield break;
+
+        if (hitCoroutine != null)
+        {
+            StopCoroutine(hitCoroutine);
+        }
+
+        hitCoroutine = StartCoroutine(HitFlashRoutine());
+    }
+
+    IEnumerator HitFlashRoutine()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = originalColor;
     }
 }

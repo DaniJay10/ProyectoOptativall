@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Player : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Player : MonoBehaviour
     Vector2 movementInput;
     private Animator animator;
     private int currentHealth;
-    private int maxHealth = 100;
+    public int maxHealth = 50;
     private bool gameIsPaused = false;
 
     // Animacion de ataque
@@ -19,7 +20,7 @@ public class Player : MonoBehaviour
     public float AttackRange = 1.2f;
 
     // Ataque a objetos
-    public LayerMask EnemyLayer;
+    public LayerMask targetLayer;
 
     void Start()
     {
@@ -193,17 +194,29 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
-    /// Metodo golpear a enemigo
+    /// Metodo golpear a enemigos/animales/arboles
     /// </summary>
-    public void DetectAndDamageEnemies()
+    public void DetectAndDamageTargets()
     {
         Vector2 AttackPoint = (Vector2)transform.position + AttackDirection * AttackRange * 0.5f;
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPoint, AttackRange, EnemyLayer);
+        Collider2D[] hitTarget = Physics2D.OverlapCircleAll(AttackPoint, AttackRange, targetLayer);
 
-        foreach(Collider2D enemy in hitEnemies)
+        foreach(Collider2D target in hitTarget)
         {
-            Vector2 hitDirection = enemy.transform.position - transform.position;
-            enemy.GetComponent<DamageReceiver>().ApplyDamage(1, true, false, hitDirection);
+            Vector2 hitDirection = target.transform.position - transform.position;
+            GameObject obj = target.gameObject;
+            int layer = obj.layer;
+
+            //Enemigo y obveja
+            if (layer == LayerMask.NameToLayer("Enemy") || layer == LayerMask.NameToLayer("Sheep"))
+            {
+                target.GetComponent<DamageReceiver>().ApplyDamage(10, true, false, hitDirection);
+            }
+            //Arbol
+            else if (layer == LayerMask.NameToLayer("Tree"))
+            {
+                target.GetComponent<DamageReceiver>().ApplyDamage(10, false, true, hitDirection);
+            }
         }
     }
 
