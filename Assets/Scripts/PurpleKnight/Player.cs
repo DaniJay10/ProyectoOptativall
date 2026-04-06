@@ -11,10 +11,15 @@ public class Player : MonoBehaviour
     private int maxHealth = 100;
     private bool gameIsPaused = false;
 
-    // Ataque
+    // Animacion de ataque
     private bool isAttacking = false;
     private bool canMove = true;
     Vector2 lastMovementDir = Vector2.right;
+    Vector2 AttackDirection;
+    public float AttackRange = 1.2f;
+
+    // Ataque a objetos
+    public LayerMask EnemyLayer;
 
     void Start()
     {
@@ -126,7 +131,7 @@ public class Player : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && !isAttacking)
         {
             int direction = GetDirectionIndex(lastMovementDir);
-            Vector2 AttackDirection = GetAttackInputDirection();
+            AttackDirection = GetAttackInputDirection();
             int attackDirection = GetDirectionIndex(AttackDirection);
 
             animator.SetInteger("AttackDirection", attackDirection);
@@ -184,6 +189,21 @@ public class Player : MonoBehaviour
         else
         {
             return Direction.y > 0 ? 2 : 3;
+        }
+    }
+
+    /// <summary>
+    /// Metodo golpear a enemigo
+    /// </summary>
+    public void DetectAndDamageEnemies()
+    {
+        Vector2 AttackPoint = (Vector2)transform.position + AttackDirection * AttackRange * 0.5f;
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPoint, AttackRange, EnemyLayer);
+
+        foreach(Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("Enemigo golpeado: " + enemy.name);
+            //Destroy(enemy.gameObject);
         }
     }
 
