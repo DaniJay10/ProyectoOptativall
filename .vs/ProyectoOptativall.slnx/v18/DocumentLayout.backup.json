@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\danie\\ProyectoOptativall\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\npcs\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npcs\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\npcs\\neutralnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npcs\\neutralnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\damagereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\damagereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\enemy\\enemytorch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemytorch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\npcs\\neutralnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npcs\\neutralnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,36 +38,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "NeutralNPC.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NeutralNPC.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPCs\\NeutralNPC.cs",
+              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NeutralNPC.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPCs\\NeutralNPC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T22:21:50.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DamageReceiver.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\DamageReceiver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DamageReceiver.cs",
               "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\DamageReceiver.cs",
               "RelativeToolTip": "Assets\\Scripts\\DamageReceiver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T15:03:47.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "NPC.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NPC.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPCs\\NPC.cs",
+              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NPC.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPCs\\NPC.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAgwJgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T02:33:15.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PurpleKnight\\Player.cs",
               "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\PurpleKnight\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAM4AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAswN8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-05T23:49:31.255Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MineDoor.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Mine\\MineDoor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Mine\\MineDoor.cs",
@@ -75,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Sheep.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Sheep\\Sheep.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sheep\\Sheep.cs",
@@ -87,19 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NeutralNPC.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NeutralNPC.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\NPCs\\NeutralNPC.cs",
-              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NeutralNPC.cs",
-              "RelativeToolTip": "Assets\\Scripts\\NPCs\\NeutralNPC.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T22:21:50.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "EnemyTorch.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Enemy\\EnemyTorch.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyTorch.cs",
