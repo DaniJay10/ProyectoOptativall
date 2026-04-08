@@ -7,8 +7,9 @@ using UnityEngine.AI;
 
 public class NPC : MonoBehaviour
 {
-    NavMeshAgent navMeshAgent;
-    Animator animator;
+
+    protected NavMeshAgent navMeshAgent;
+    protected Animator animator;
     protected Transform playerTransform;
 
     [Header("MovementType")]

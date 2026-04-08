@@ -8,13 +8,13 @@ public class Player : MonoBehaviour
     Rigidbody2D rb2D;
     Vector2 movementInput;
     private Animator animator;
-    private int currentHealth;
-    public int maxHealth = 50;
     private bool gameIsPaused = false;
 
     // Animacion de ataque
     private bool isAttacking = false;
-    private bool canMove = true;
+
+    [HideInInspector]
+    public  bool canMove = true;
     Vector2 lastMovementDir = Vector2.right;
     Vector2 AttackDirection;
     public float AttackRange = 1.2f;
@@ -27,8 +27,6 @@ public class Player : MonoBehaviour
         //Como es una variable publica, se puede asignar desde el inspector, pero también se puede hacer por código
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        currentHealth = maxHealth;
-        UIManager.Instance.UpdateHealth(currentHealth);
     }
 
     void Update()
@@ -46,16 +44,6 @@ public class Player : MonoBehaviour
         OpenCloseInventory();
         OpenClousePauseMenu();
 
-        //Ataque
-        if (isAttacking)
-        {
-            canMove = false;
-        }
-        else
-        {
-            canMove = true;
-        }
-
         if(movementInput != Vector2.zero)
         {
             lastMovementDir = movementInput;
@@ -70,13 +58,7 @@ public class Player : MonoBehaviour
         if (canMove)
         {
             rb2D.linearVelocity = movementInput * speed;
-        }
-        else
-        {
-            rb2D.linearVelocity = Vector2.zero;
-        }
-        
-       
+        } 
     }
 
     /// <summary>
@@ -150,6 +132,8 @@ public class Player : MonoBehaviour
     public void StartAttack()
     {
         isAttacking = true;
+        rb2D.linearVelocity = Vector2.zero;
+        canMove = false;
     }
 
     /// <summary>
@@ -158,6 +142,7 @@ public class Player : MonoBehaviour
     public void EndAttack()
     {
         isAttacking = false;
+        canMove = true;
     }
 
     Vector2 GetAttackInputDirection()
@@ -210,12 +195,16 @@ public class Player : MonoBehaviour
             //Enemigo y obveja
             if (layer == LayerMask.NameToLayer("Enemy") || layer == LayerMask.NameToLayer("Sheep"))
             {
-                target.GetComponent<DamageReceiver>().ApplyDamage(10, true, false, hitDirection);
+                obj.GetComponent<DamageReceiver>().ApplyDamage(10, true, false, hitDirection);
             }
             //Arbol
             else if (layer == LayerMask.NameToLayer("Tree"))
             {
-                target.GetComponent<DamageReceiver>().ApplyDamage(10, false, true, hitDirection);
+                obj.GetComponent<DamageReceiver>().ApplyDamage(10, false, true, hitDirection);
+            }
+            else
+            {
+                Debug.LogWarning("Objeto con layer no valida");
             }
         }
     }
