@@ -38,6 +38,10 @@ public class NPC : MonoBehaviour
     private int indexPath = 0;
     private Coroutine currentMovementRoutine;
 
+    [Header("RandonMovement")]
+    public float movementRadius = 5f;
+    public float waitTimeRandomMovement = 4f;
+
     protected virtual void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -89,6 +93,7 @@ public class NPC : MonoBehaviour
                 StartPathRoutine();
                 break;
             case MovementType.RandomMovement:
+                StartRandomRoutine();
                 break;
             
         }
@@ -108,6 +113,12 @@ public class NPC : MonoBehaviour
         StopCurrentRoutine();
         currentMovementRoutine = StartCoroutine(FollowPath());
 
+    }
+
+    protected void StartRandomRoutine()
+    {
+        StopCurrentRoutine();
+        currentMovementRoutine = StartCoroutine(RandonMovement());
     }
 
 
@@ -147,6 +158,28 @@ public class NPC : MonoBehaviour
 
             }
         }
+    }
+
+    protected IEnumerator RandonMovement()
+    {
+        while (true)
+        {
+            Vector3 randomPos = GetRandomNavMeshPosition();
+            navMeshAgent.SetDestination(randomPos);
+            yield return WaitUntilDestinationReached();
+            yield return new WaitForSeconds(waitTimeRandomMovement);
+        }
+    }
+
+    private Vector3 GetRandomNavMeshPosition()
+    {
+        Vector3 randomDirection = Random.insideUnitSphere * movementRadius + transform.position;
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(randomDirection, out hit, movementRadius, NavMesh.AllAreas))
+        {
+            return hit.position;
+        }
+        return transform.position; 
     }
 
     private IEnumerator WaitUntilDestinationReached()
