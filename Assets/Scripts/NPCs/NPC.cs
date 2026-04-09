@@ -32,15 +32,33 @@ public class NPC : MonoBehaviour
         Yellow
     }
 
-    [Header("PathMovement")]
+    [Header("Path Movement")]
     public Transform[] pathPoints;
     public float waitTimeInPount = 3;
     private int indexPath = 0;
     private Coroutine currentMovementRoutine;
 
-    [Header("RandonMovement")]
+    [Header("Randon Movement")]
     public float movementRadius = 5f;
     public float waitTimeRandomMovement = 4f;
+
+    [Header("Player Chase")]
+    public bool canChasePlayer = false;
+    public float chaseRadius = 5f;
+    public float stopDistaceFromPlayer = 1.5f;
+    protected bool isChasingPlayer = false;
+
+    [Header("Flee Behavior")]
+    public bool canFlee = false;
+    public float fleeRange = 4f;
+    public float fleeDistance = 5f;
+    private bool isFleeing = false;
+    private MovementType previousMovementType;
+
+    [Header("Return to Origin")]
+    public bool returnToOrigin = false;
+    public float maxDistanceFromOrigin = 1;
+    protected Vector3 originPosition;
 
     protected virtual void Start()
     {
@@ -51,6 +69,7 @@ public class NPC : MonoBehaviour
         ApplySkin();
 
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        originPosition = transform.position;
 
         ResumeOriginalBehaviour();
     }
@@ -58,6 +77,15 @@ public class NPC : MonoBehaviour
     protected virtual void Update()
     {
         AdjustAnimationAndRotation();
+
+        //Seguir al jugador
+        HandleFleeLogic();
+
+        //Perseguir al jugador
+        HandleChaseLogin();
+
+        //Mover al punto
+        HandleReturnToOrigin();
     }
 
 
@@ -190,5 +218,81 @@ public class NPC : MonoBehaviour
         }
     }
 
+    protected void HandleChaseLogin()
+    {
+        if(!canChasePlayer || playerTransform == null)
+        {
+            return;
+        }
+        
+        float distance = Vector3.Distance(transform.position, playerTransform.position);
+
+        if(distance <= chaseRadius)
+        {
+            if(!isChasingPlayer)
+            {
+                StopCurrentRoutine();
+                isChasingPlayer = true;
+            }
+            if(distance > stopDistaceFromPlayer)
+            {
+                navMeshAgent.stoppingDistance = stopDistaceFromPlayer;
+                navMeshAgent.SetDestination(playerTransform.position);
+            }
+            else
+            {
+                navMeshAgent.ResetPath();
+            }
+        }
+        else if (isChasingPlayer)
+        {
+            navMeshAgent.ResetPath();
+            isChasingPlayer = false;
+            ResumeOriginalBehaviour();
+        }
+    }
+
+    protected void HandleFleeLogic()
+    {
+        if (!canFlee || playerTransform == null)
+        {
+            return;
+        }
+        float distance = Vector3.Distance(transform.position, playerTransform.position);
+        if (distance < fleeRange && !isFleeing)
+        {
+            isFleeing = true;
+            previousMovementType = movementType;
+            StopCurrentRoutine();
+            Vector3 fleeDirection = (transform.position - playerTransform.position).normalized;
+            Vector3 fleeTarget = transform.position + fleeDirection * fleeDistance;
+
+            if(NavMesh.SamplePosition(fleeTarget, out NavMeshHit hit, fleeDistance, NavMesh.AllAreas))
+            {
+                navMeshAgent.SetDestination(hit.position);
+            }
+        }
+        else if(distance >= fleeRange && isFleeing)
+        {
+            isFleeing = false;
+            ResumeMovementBehavior(previousMovementType);
+        }
+    }
+
+    protected void HandleReturnToOrigin()
+    {
+        if(!returnToOrigin || isFleeing)
+        {
+            return;
+        }
+
+        float distance = Vector3.Distance(transform.position, originPosition);
+
+        if(distance > maxDistanceFromOrigin)
+        {
+            StopCurrentRoutine();
+            navMeshAgent.SetDestination(originPosition);
+        }
+    }
 }
 

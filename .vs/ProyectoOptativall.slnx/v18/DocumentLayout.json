@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npcs\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\enemy\\enemytorch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemytorch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\sheep\\sheep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sheep\\sheep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\purpleknight\\damagereceiverwarrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\purpleknight\\damagereceiverwarrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\enemy\\enemytorch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemytorch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\purpleknight\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DamageReceiverWarrior.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\DamageReceiverWarrior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PurpleKnight\\DamageReceiverWarrior.cs",
@@ -54,20 +54,20 @@
               "RelativeToolTip": "Assets\\Scripts\\PurpleKnight\\DamageReceiverWarrior.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T20:31:12.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T20:31:12.83Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "EnemyTorch.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Enemy\\EnemyTorch.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyTorch.cs",
               "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Enemy\\EnemyTorch.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyTorch.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T22:21:55.034Z"
+              "WhenOpened": "2026-03-28T22:21:55.034Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -101,14 +101,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPCs\\NPC.cs",
               "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NPC.cs",
               "RelativeToolTip": "Assets\\Scripts\\NPCs\\NPC.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABMBAAAAAAAAAAAiwB8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T02:33:15.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "NeutralNPC.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NeutralNPC.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPCs\\NeutralNPC.cs",
@@ -116,8 +116,7 @@
               "RelativeToolTip": "Assets\\Scripts\\NPCs\\NeutralNPC.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T22:21:50.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-28T22:21:50.887Z"
             },
             {
               "$type": "Document",
@@ -133,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Sheep.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Sheep\\Sheep.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sheep\\Sheep.cs",
@@ -141,8 +140,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Sheep\\Sheep.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T01:01:58.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-29T01:01:58.083Z"
             }
           ]
         }
