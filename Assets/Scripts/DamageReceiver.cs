@@ -20,6 +20,10 @@ public class DamageReceiver : MonoBehaviour
     private Color originalColor;
     Coroutine hitCoroutine;
 
+    public int xpOnDeath = 25;
+    public static event System.Action<int> OnTargetKilled;
+
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -76,6 +80,7 @@ public class DamageReceiver : MonoBehaviour
 
     void Die()
     {
+        OnTargetKilled?.Invoke(xpOnDeath);
         Destroy(gameObject);
     }
 

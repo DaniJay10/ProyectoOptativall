@@ -23,22 +23,6 @@ public class EnemyTorch : NPC
         base.Start();
     }
 
-    //protected override void Update()
-    //{
-    //    base.Update();
-
-    //    if (playerTransform == null) return;
-
-    //    float distance = Vector3.Distance(transform.position, playerTransform.position);
-
-    //    // Solo ataca si est� suficientemente cerca
-    //    if (distance <= attackRange && !isAttacking && Time.time >= lastAttackTime + attackCooldown)
-    //    {
-    //        AttackPlayer();
-    //        lastAttackTime = Time.time;
-    //    }
-    //}
-
     protected override void Update()
     {
         base.Update();
@@ -47,23 +31,9 @@ public class EnemyTorch : NPC
 
         float distance = Vector3.Distance(transform.position, playerTransform.position);
 
-        // Solo registrar cuando estamos cerca pero no atacamos
-        if (distance <= attackRange && !isAttacking && Time.time < lastAttackTime + attackCooldown)
-        {
-            Debug.Log("Estoy cerca pero en cooldown. Tiempo restante: " + ((lastAttackTime + attackCooldown) - Time.time));
-        }
-        else if (distance <= attackRange && isAttacking)
-        {
-            Debug.Log("Estoy cerca pero ya estoy atacando");
-        }
-        else if (distance > attackRange)
-        {
-            // No hacer nada, solo moverse
-        }
-
+        // Solo ataca si est� suficientemente cerca
         if (distance <= attackRange && !isAttacking && Time.time >= lastAttackTime + attackCooldown)
         {
-            Debug.Log("<<< ATACANDO >>>");
             AttackPlayer();
             lastAttackTime = Time.time;
         }
@@ -75,8 +45,6 @@ public class EnemyTorch : NPC
     /// </summary>
     private void AttackPlayer()
     {
-        Debug.Log("AttackPlayer se llamó");
-
         isAttacking = true;
         canMove = false;
         navMeshAgent.ResetPath();
@@ -128,18 +96,18 @@ public class EnemyTorch : NPC
     /// </summary>
     public void DetectAndDamageTargets()
     {
-        Debug.Log("DetectAndDamageTargets se llamó");
+
 
         Vector2 AttackPoint = (Vector2)transform.position + playerDirection.normalized * attackRange * 0.5f;
         Collider2D[] hitTarget = Physics2D.OverlapCircleAll(AttackPoint, attackRange, targetLayer);
 
-        Debug.Log("Número de objetivos detectados: " + hitTarget.Length);
+
 
         HashSet<GameObject> damagedTargets = new HashSet<GameObject>();
 
         foreach (Collider2D target in hitTarget)
         {
-            Debug.Log("Objetivo detectado: " + target.gameObject.name);
+
 
             GameObject obj = target.gameObject;
             int layer = obj.layer;

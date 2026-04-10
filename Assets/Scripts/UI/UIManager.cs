@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class UIManager : MonoBehaviour
     public TMP_Text MeatCountText;
     public TMP_Text WoodCountText;
     public TMP_Text HealthText;
+    public TMP_Text maxHealthText;
+    public TMP_Text levelText;
+    public TMP_Text attackDamageText;
+    public TMP_Text speedText;
+    public Slider xpSlider;
+
 
     private void Awake()
     {
@@ -75,9 +82,10 @@ public class UIManager : MonoBehaviour
     /// Actualiza la vida del jugador
     /// </summary>
     /// <param name="HealthValue"></param>
-    public void UpdateHealth(int HealthValue)
+    public void UpdateHealth(int HealthValue, int maxHealthValue)
     {
         HealthText.text = HealthValue.ToString();
+        maxHealthText.text = maxHealthValue.ToString();
     }
 
     /// <summary>
@@ -96,5 +104,13 @@ public class UIManager : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    public void UpdatePlayerStats(int xpValue, int levelValue, float speedValue, int attackDamageValue)
+    {
+        xpSlider.value = xpValue;
+        levelText.text = levelValue.ToString();
+        speedText.text = speedValue.ToString();
+        attackDamageText.text = attackDamageValue.ToString();
     }
 }

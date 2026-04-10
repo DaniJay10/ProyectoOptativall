@@ -18,15 +18,22 @@ public class Player : MonoBehaviour
     Vector2 lastMovementDir = Vector2.right;
     Vector2 AttackDirection;
     public float AttackRange = 1.2f;
+    public int attackDamage = 10;
 
     // Ataque a objetos
     public LayerMask targetLayer;
+
+    private int xp = 0;
+    [HideInInspector]
+    public int currentLevel = 1;
 
     void Start()
     {
         //Como es una variable publica, se puede asignar desde el inspector, pero también se puede hacer por código
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        UIManager.Instance.UpdatePlayerStats(xp, currentLevel, speed, attackDamage);
     }
 
     void Update()
@@ -206,17 +213,76 @@ public class Player : MonoBehaviour
             //Enemigo y obveja
             if (layer == LayerMask.NameToLayer("Enemy") || layer == LayerMask.NameToLayer("Sheep"))
             {
-                obj.GetComponent<DamageReceiver>().ApplyDamage(10, true, false, hitDirection);
+                obj.GetComponent<DamageReceiver>().ApplyDamage(attackDamage, true, false, hitDirection);
             }
             //Arbol
             else if (layer == LayerMask.NameToLayer("Tree"))
             {
-                obj.GetComponent<DamageReceiver>().ApplyDamage(10, false, true, hitDirection);
+                obj.GetComponent<DamageReceiver>().ApplyDamage(attackDamage, false, true, hitDirection);
             }
             else
             {
                 Debug.LogWarning("Objeto con layer no valida");
             }
+        }
+    }
+
+
+    private void OnEnable()
+    {
+        DamageReceiver.OnTargetKilled += AddExp;
+    }
+
+    private void OnDisable()
+    {
+        DamageReceiver.OnTargetKilled -= AddExp;
+    }
+
+    public void AddExp(int xpAmount)
+    {
+        Debug.Log("Entro a AddExp");
+        xp += xpAmount;
+        if (xp >= 100)
+        {
+            Debug.Log("¡SUBIENDO DE NVIEL!");
+            xp -= 100;
+            LevelUp();
+        }
+        UIManager.Instance.UpdatePlayerStats(xp, currentLevel, speed, attackDamage);
+    }
+
+    private void LevelUp()
+    {
+        Debug.Log("Entro a Level Up");
+        currentLevel++;
+
+        switch (currentLevel)
+        {
+            case 2:
+                speed += 1;
+                attackDamage += 1;
+                GetComponent<DamageReceiverWarrior>().GainHealth(1);
+                break;
+            case 3:
+                speed += 1;
+                attackDamage += 1;
+                GetComponent<DamageReceiverWarrior>().GainHealth(1);
+                break;
+            case 4:
+                speed += 1;
+                attackDamage += 1;
+                GetComponent<DamageReceiverWarrior>().GainHealth(1);
+                break;
+            case 5:
+                speed += 1;
+                attackDamage += 1;
+                GetComponent<DamageReceiverWarrior>().GainHealth(1);
+                break;
+            case 6:
+                speed += 1;
+                attackDamage += 1;
+                GetComponent<DamageReceiverWarrior>().GainHealth(1);
+                break;
         }
     }
 

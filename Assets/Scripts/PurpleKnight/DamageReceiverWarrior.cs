@@ -21,7 +21,7 @@ public class DamageReceiverWarrior : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        UIManager.Instance.UpdateHealth(currentHealth);
+        UIManager.Instance.UpdateHealth(currentHealth, maxHealth);
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
@@ -38,7 +38,7 @@ public class DamageReceiverWarrior : MonoBehaviour
     public void ApplyDamage(int amount, bool applyForceOrNot, bool applyWithAnimation, Vector2 hitDirection)
     {
         currentHealth -= amount;
-        UIManager.Instance.UpdateHealth(currentHealth);
+        UIManager.Instance.UpdateHealth(currentHealth, maxHealth);
         StartCoroutine(HitFlash());
 
         if (applyForceOrNot)
@@ -60,6 +60,13 @@ public class DamageReceiverWarrior : MonoBehaviour
     private void ResetMovement()
     {
         GetComponent<Player>().canMove = true;
+    }
+
+    public void GainHealth(int healthAmount)
+    {
+        maxHealth += healthAmount;
+        currentHealth += healthAmount;
+        UIManager.Instance.UpdateHealth(currentHealth, maxHealth);
     }
 
     void Die()
