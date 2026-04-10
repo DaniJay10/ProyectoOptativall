@@ -43,8 +43,9 @@ public class Player : MonoBehaviour
         CheckFlip();
         OpenCloseInventory();
         OpenClousePauseMenu();
+        OpenCloseStatsPlayer();
 
-        if(movementInput != Vector2.zero)
+        if (movementInput != Vector2.zero)
         {
             lastMovementDir = movementInput;
         }
@@ -83,7 +84,17 @@ public class Player : MonoBehaviour
         {
             UIManager.Instance.OpenOrCloseInventory();
         }
-    
+    }
+
+    ///<summary>
+    /// Abrir y cerar stats del jugador
+    /// </summary>
+    void OpenCloseStatsPlayer()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            UIManager.Instance.OpenOrCloseStatsPlayer();
+        }
     }
 
     /// <summary>

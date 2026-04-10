@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
 
     public GameObject inventory;
     public GameObject pauseMenu;
+    public GameObject statsPanel;
     public TMP_Text MoneyCountText;
     public TMP_Text MeatCountText;
     public TMP_Text WoodCountText;
@@ -33,6 +34,14 @@ public class UIManager : MonoBehaviour
     public void OpenOrCloseInventory ()
     {
         inventory.SetActive(!inventory.activeSelf);
+    }
+
+    /// <summary>
+    /// Cerrar o abrir stats del jugador
+    /// </summary>
+    public void OpenOrCloseStatsPlayer()
+    {
+        statsPanel.SetActive(!statsPanel.activeSelf);
     }
 
     /// <summary>
