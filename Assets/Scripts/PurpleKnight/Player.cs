@@ -1,3 +1,4 @@
+using UnityEditor.Animations;
 using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
@@ -27,6 +28,17 @@ public class Player : MonoBehaviour
     [HideInInspector]
     public int currentLevel = 1;
 
+    //SKINS
+    public NPCSkin selectedSkin;
+    public AnimatorController[] animationControllers;
+    public enum NPCSkin
+    {
+        Purple,
+        Blue,
+        Red,
+        Yellow
+    }
+
     void Start()
     {
         //Como es una variable publica, se puede asignar desde el inspector, pero también se puede hacer por código
@@ -34,6 +46,7 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
 
         UIManager.Instance.UpdatePlayerStats(xp, currentLevel, speed, attackDamage);
+        ApplySkin();
     }
 
     void Update()
@@ -283,6 +296,33 @@ public class Player : MonoBehaviour
                 attackDamage += 1;
                 GetComponent<DamageReceiverWarrior>().GainHealth(1);
                 break;
+        }
+    }
+
+
+    /// <summary>
+    /// Cambia de skin segun la seleccionada
+    /// </summary>
+    void ApplySkin()
+    {
+        string savedSkinName = PlayerPrefs.GetString("MainPlayerSkin", "Purple");
+
+        if(System.Enum.TryParse(savedSkinName, out NPCSkin savedSkin))
+        {
+            selectedSkin = savedSkin;
+        }
+        else
+        {
+            selectedSkin = NPCSkin.Purple;
+        }
+
+        if (animationControllers != null && animationControllers.Length > 0)
+        {
+            int skinIndex = (int)selectedSkin;
+            if (animator != null && skinIndex < animationControllers.Length)
+            {
+                animator.runtimeAnimatorController = animationControllers[skinIndex];
+            }
         }
     }
 
