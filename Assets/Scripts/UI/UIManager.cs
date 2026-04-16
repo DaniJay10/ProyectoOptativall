@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Unity.VectorGraphics;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -20,7 +22,7 @@ public class UIManager : MonoBehaviour
     public TMP_Text attackDamageText;
     public TMP_Text speedText;
     public Slider xpSlider;
-
+    public GameObject pauseMenuButton;
 
     private void Awake()
     {
@@ -94,6 +96,7 @@ public class UIManager : MonoBehaviour
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
+        pauseMenuButton.SetActive(false);
         Time.timeScale = 0;
     }
 
@@ -103,7 +106,17 @@ public class UIManager : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
+        pauseMenuButton.SetActive(true);
         Time.timeScale = 1;
+    }
+
+    /// <summary>
+    /// Volver al menu principal
+    /// </summary>
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void UpdatePlayerStats(int xpValue, int levelValue, float speedValue, int attackDamageValue)
