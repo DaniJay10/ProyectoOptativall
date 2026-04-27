@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour
     public GameObject inventory;
     public GameObject pauseMenu;
     public GameObject statsPanel;
+    public GameObject questPanel;
+
     public TMP_Text MoneyCountText;
     public TMP_Text MeatCountText;
     public TMP_Text WoodCountText;
@@ -21,8 +23,15 @@ public class UIManager : MonoBehaviour
     public TMP_Text levelText;
     public TMP_Text attackDamageText;
     public TMP_Text speedText;
+
     public Slider xpSlider;
     public GameObject pauseMenuButton;
+
+    // Datos de misiones
+    public TMP_Text requiredMoneyCountText;
+    public TMP_Text requiredWoodCountText;
+    public TMP_Text requiredMeatCountText;
+    public TMP_Text questText;
 
     private void Awake()
     {
@@ -119,6 +128,13 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    /// <summary>
+    /// Actualizar stats del jugador
+    /// </summary>
+    /// <param name="xpValue"></param>
+    /// <param name="levelValue"></param>
+    /// <param name="speedValue"></param>
+    /// <param name="attackDamageValue"></param>
     public void UpdatePlayerStats(int xpValue, int levelValue, float speedValue, int attackDamageValue)
     {
         xpSlider.value = xpValue;
@@ -126,4 +142,20 @@ public class UIManager : MonoBehaviour
         speedText.text = speedValue.ToString();
         attackDamageText.text = attackDamageValue.ToString();
     }
+
+    /// <summary>
+    /// Ver panel de las misiones
+    /// </summary>
+    public void ShowQuestPanel()
+    {
+        questPanel.SetActive(true);
+    }
+
+    /// <summary>
+    /// Ocultar panel de misiones
+    /// </summary>
+    public void HideQuestPanel()
+    {
+        questPanel.SetActive(false);
+    }   
 }

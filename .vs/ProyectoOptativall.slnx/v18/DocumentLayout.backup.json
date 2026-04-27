@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\danie\\ProyectoOptativall\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\light\\light flickering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\light\\light flickering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\npcs\\archer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npcs\\archer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,6 +59,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Light Flickering.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Light\\Light Flickering.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Light\\Light Flickering.cs",
+              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Light\\Light Flickering.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Light\\Light Flickering.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T16:51:09.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Archer.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\Archer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPCs\\Archer.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EnemyTNT.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Enemy\\EnemyTNT.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyTNT.cs",
@@ -79,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UIManager.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\UI\\UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIManager.cs",
@@ -91,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "NPC.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NPC.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPCs\\NPC.cs",
@@ -103,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\MainMenu\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\MainMenu.cs",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EnemyTorch.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Enemy\\EnemyTorch.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyTorch.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PurpleKnight\\Player.cs",
@@ -139,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DamageReceiverWarrior.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\DamageReceiverWarrior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PurpleKnight\\DamageReceiverWarrior.cs",
@@ -151,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DamageReceiver.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\DamageReceiver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DamageReceiver.cs",
@@ -163,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "GridEditorUtility.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Library\\PackageCache\\com.unity.2d.tilemap@2394479dc113\\Editor\\GridEditorUtility.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.2d.tilemap@2394479dc113\\Editor\\GridEditorUtility.cs",
