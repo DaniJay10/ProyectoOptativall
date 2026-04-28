@@ -3,48 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\danie\\ProyectoOptativall\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\quest\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\quest\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\light\\light flickering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\light\\light flickering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\npcs\\archer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npcs\\archer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\enemy\\enemytnt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemytnt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\mainmenu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\npcs\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npcs\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\purpleknight\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\purpleknight\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\purpleknight\\resourcecollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\purpleknight\\resourcecollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\enemy\\enemytorch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemytorch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\purpleknight\\damagereceiverwarrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\purpleknight\\damagereceiverwarrior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\danie\\proyectooptativall\\assets\\scripts\\damagereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\damagereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\danie\\ProyectoOptativall\\Library\\PackageCache\\com.unity.2d.tilemap@2394479dc113\\Editor\\GridEditorUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,8 +38,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Quest.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Quest\\Quest.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Quest\\Quest.cs",
+              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Quest\\Quest.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Quest\\Quest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T00:28:43.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PurpleKnight\\Player.cs",
+              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PurpleKnight\\Player.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwEYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T00:15:00.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\UI\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIManager.cs",
+              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\UI\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIManager.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAUwKcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T00:03:32.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ResourceCollector.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\ResourceCollector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PurpleKnight\\ResourceCollector.cs",
+              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\ResourceCollector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PurpleKnight\\ResourceCollector.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T23:52:16.876Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -68,88 +98,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quest\\QuestManager.cs",
               "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Quest\\QuestManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Quest\\QuestManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T02:56:10.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Light Flickering.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Light\\Light Flickering.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Light\\Light Flickering.cs",
-              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Light\\Light Flickering.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Light\\Light Flickering.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T16:51:09.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Archer.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\Archer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\NPCs\\Archer.cs",
-              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\Archer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\NPCs\\Archer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T00:18:02.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EnemyTNT.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Enemy\\EnemyTNT.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyTNT.cs",
-              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Enemy\\EnemyTNT.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyTNT.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCMAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T00:36:00.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UIManager.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\UI\\UIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIManager.cs",
-              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\UI\\UIManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\UIManager.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAA5wJQAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T20:37:59.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NPC.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NPC.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\NPCs\\NPC.cs",
-              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\NPCs\\NPC.cs",
-              "RelativeToolTip": "Assets\\Scripts\\NPCs\\NPC.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAIwFoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T20:06:29.544Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\MainMenu\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\MainMenu\\MainMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainMenu\\MainMenu.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAiwBEAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T20:20:10.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "EnemyTorch.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\Enemy\\EnemyTorch.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyTorch.cs",
@@ -161,43 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PurpleKnight\\Player.cs",
-              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PurpleKnight\\Player.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T23:49:31.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DamageReceiverWarrior.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\DamageReceiverWarrior.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PurpleKnight\\DamageReceiverWarrior.cs",
-              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\PurpleKnight\\DamageReceiverWarrior.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PurpleKnight\\DamageReceiverWarrior.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAuwEoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T02:46:41.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DamageReceiver.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\DamageReceiver.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DamageReceiver.cs",
-              "ToolTip": "C:\\Users\\danie\\ProyectoOptativall\\Assets\\Scripts\\DamageReceiver.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DamageReceiver.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAuwFEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T02:33:08.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "GridEditorUtility.cs",
               "DocumentMoniker": "C:\\Users\\danie\\ProyectoOptativall\\Library\\PackageCache\\com.unity.2d.tilemap@2394479dc113\\Editor\\GridEditorUtility.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.2d.tilemap@2394479dc113\\Editor\\GridEditorUtility.cs",

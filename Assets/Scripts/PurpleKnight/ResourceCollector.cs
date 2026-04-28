@@ -30,5 +30,27 @@ public class ResourceCollector : MonoBehaviour
             UIManager.Instance.UpdateWood(wood);
         }
     }
+
+    public void UpdateAllResources()
+    {
+        UIManager.Instance.UpdateMoney(money);
+        UIManager.Instance.UpdateMeat(meat);
+        UIManager.Instance.UpdateWood(wood);
+    }
+
+
+
+
+    /// <summary>
+    /// Retornamos los valores para saber si se cumplio la mision
+    /// </summary>
+    /// <returns></returns>
+    public int GetMoney() => money;
+    public int GetMeat() => meat;
+    public int GetWood() => wood;
+
+    public void SetMoney(int amount) => money = amount;
+    public void SetMeat(int amount) => meat = amount;
+    public void SetWood(int amount) => wood = amount;
 }
 

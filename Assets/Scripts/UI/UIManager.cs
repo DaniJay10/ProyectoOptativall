@@ -158,4 +158,13 @@ public class UIManager : MonoBehaviour
     {
         questPanel.SetActive(false);
     }   
+
+
+    public void UpdateQuestPanel(int moneyAmount, int woodAmount, int meatAmount, string questName)
+    {
+        requiredMoneyCountText.text = moneyAmount.ToString();
+        requiredWoodCountText.text = woodAmount.ToString();
+        requiredMeatCountText.text = meatAmount.ToString();
+        questText.text = questName.ToString();
+    }
 }

@@ -64,6 +64,7 @@ public class Player : MonoBehaviour
         OpenCloseInventory();
         OpenClousePauseMenu();
         OpenCloseStatsPlayer();
+        OpenCloseQuests();
 
         if (movementInput != Vector2.zero)
         {
@@ -322,6 +323,25 @@ public class Player : MonoBehaviour
             if (animator != null && skinIndex < animationControllers.Length)
             {
                 animator.runtimeAnimatorController = animationControllers[skinIndex];
+            }
+        }
+    }
+
+    /// <summary>
+    /// Cerrar ventana de misiones
+    /// </summary>
+    public void OpenCloseQuests()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (UIManager.Instance.questPanel.activeSelf)
+            {
+                UIManager.Instance.HideQuestPanel();
+
+            }
+            else
+            {
+                UIManager.Instance.ShowQuestPanel();
             }
         }
     }
